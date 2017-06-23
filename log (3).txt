@@ -1,0 +1,1742 @@
+[00:00:00] Build started
+[00:00:02] $env:Path += ";" + (Join-Path $env:USERPROFILE ".cargo/bin")
+[00:00:02] $env:RUSTUP_HOME = (Join-Path $env:USERPROFILE ".rustup")
+[00:00:02] $env:CARGO_HOME = (Join-Path $env:USERPROFILE ".cargo")
+[00:00:02] git clone -q --branch=master https://github.com/shohel1980/windbg-debug.git C:\projects\windbg-debug
+[00:00:05] git checkout -qf a7ae440672251fc37d55315f9547fc55649a275a
+[00:00:11] Write-Host $env:Path
+[00:00:11] C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\7-Zip;C:\Program Files\Microsoft\Web Platform Installer\;C:\Tools\GitVersion;C:\Tools\PsTools;C:\Program Files\Git LFS;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Tools\WebDriver;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.4\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Ruby193\bin;C:\Tools\NUnit\bin;C:\Tools\xUnit;C:\Tools\MSpec;C:\Tools\Coverity\bin;C:\Program Files (x86)\CMake\bin;C:\go\bin;C:\Program Files\Java\jdk1.8.0\bin;C:\Python27;C:\Program Files\nodejs;C:\Program Files (x86)\iojs;C:\Program Files\iojs;C:\Users\appveyor\AppData\Roaming\npm;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Tools\NuGet;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Apache\Maven\bin;C:\Python27\Scripts;C:\Tools\NUnit3;C:\Program Files\Mercurial\;C:\Program Files\LLVM\bin;C:\Program Files\dotnet\;C:\Program Files\erl8.3\bin;C:\Tools\curl\bin;C:\Program Files\Amazon\AWSCLI\;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Users\appveyor\AppData\Roaming\npm;C:\Users\appveyor\AppData\Local\Yarn\bin;C:\Program Files\AppVeyor\BuildAgent\;C:\Users\appveyor\.cargo\bin
+[00:00:11] Write-Host $env:RUSTUP_HOME
+[00:00:11] C:\Users\appveyor\.rustup
+[00:00:11] Write-Host $env:CARGO_HOME
+[00:00:11] C:\Users\appveyor\.cargo
+[00:00:11] ./build/build.ps1 -target Build
+[00:00:11] Preparing to run build script...
+[00:00:14] Running build script...
+[00:00:14] Analyzing build script...
+[00:00:14] Processing build script...
+[00:00:14] Installing tools...
+[00:00:17] Downloading and installing Roslyn...
+[00:00:17] Installing packages (using https://packages.nuget.org/api/v2)...
+[00:00:19] Copying files...
+[00:00:19] Copying Roslyn.Compilers.CSharp.dll...
+[00:00:19] Copying Roslyn.Compilers.dll...
+[00:00:19] Deleting installation directory...
+[00:00:20] Compiling build script...
+[00:00:22] 
+[00:00:22] ========================================
+[00:00:22] Restore-Packages
+[00:00:22] ========================================
+[00:00:22] Executing task: Restore-Packages
+[00:00:22] Restoring C:/projects/windbg-debug/src/windbg-debug.sln
+[00:00:24] MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin\amd64'.
+[00:00:28] Restoring NuGet package log4net.2.0.8.
+[00:00:28] Restoring NuGet package Microsoft.Diagnostics.Runtime.0.8.31-beta.
+[00:00:28] Restoring NuGet package CommandLineParser.1.9.71.
+[00:00:28] Restoring NuGet package Newtonsoft.Json.9.0.1.
+[00:00:28] Restoring NuGet package StyleCop.Analyzers.1.0.0.
+[00:00:28] Restoring NuGet package NUnit.3.6.1.
+[00:00:28] Restoring NuGet package NUnit3TestAdapter.3.7.0.
+[00:00:28] Adding package 'Newtonsoft.Json.9.0.1' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:28] Added package 'Newtonsoft.Json.9.0.1' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='log4net',Version='2.0.8')
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='Microsoft.Diagnostics.Runtime',Version='0.8.31-beta')
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='CommandLineParser',Version='1.9.71')
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='StyleCop.Analyzers',Version='1.0.0')
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='NUnit',Version='3.6.1')
+[00:00:28]   GET https://www.nuget.org/api/v2/Packages(Id='NUnit3TestAdapter',Version='3.7.0')
+[00:00:28]   OK https://www.nuget.org/api/v2/Packages(Id='Microsoft.Diagnostics.Runtime',Version='0.8.31-beta') 64ms
+[00:00:28]   GET https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Runtime/0.8.31-beta
+[00:00:29]   OK https://www.nuget.org/api/v2/Packages(Id='StyleCop.Analyzers',Version='1.0.0') 169ms
+[00:00:29]   GET https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.0
+[00:00:29]   OK https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Runtime/0.8.31-beta 76ms
+[00:00:29]   OK https://www.nuget.org/api/v2/Packages(Id='CommandLineParser',Version='1.9.71') 192ms
+[00:00:29]   GET https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71
+[00:00:29]   OK https://www.nuget.org/api/v2/Packages(Id='log4net',Version='2.0.8') 194ms
+[00:00:29]   GET https://www.nuget.org/api/v2/package/log4net/2.0.8
+[00:00:29] Installing Microsoft.Diagnostics.Runtime 0.8.31-beta.
+[00:00:29]   OK https://www.nuget.org/api/v2/Packages(Id='NUnit3TestAdapter',Version='3.7.0') 195ms
+[00:00:29]   GET https://www.nuget.org/api/v2/package/NUnit3TestAdapter/3.7.0
+[00:00:29]   OK https://www.nuget.org/api/v2/Packages(Id='NUnit',Version='3.6.1') 196ms
+[00:00:29]   GET https://www.nuget.org/api/v2/package/NUnit/3.6.1
+[00:00:29]   OK https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.0 42ms
+[00:00:29] Installing StyleCop.Analyzers 1.0.0.
+[00:00:29]   OK https://www.nuget.org/api/v2/package/NUnit/3.6.1 46ms
+[00:00:29] Installing NUnit 3.6.1.
+[00:00:29]   OK https://www.nuget.org/api/v2/package/log4net/2.0.8 67ms
+[00:00:29] Installing log4net 2.0.8.
+[00:00:29]   OK https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71 70ms
+[00:00:29] Installing CommandLineParser 1.9.71.
+[00:00:29]   OK https://www.nuget.org/api/v2/package/NUnit3TestAdapter/3.7.0 261ms
+[00:00:29] Installing NUnit3TestAdapter 3.7.0.
+[00:00:29] Adding package 'Microsoft.Diagnostics.Runtime.0.8.31-beta' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Adding package 'StyleCop.Analyzers.1.0.0' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Adding package 'CommandLineParser.1.9.71' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'Microsoft.Diagnostics.Runtime.0.8.31-beta' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Adding package 'NUnit3TestAdapter.3.7.0' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'StyleCop.Analyzers.1.0.0' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'CommandLineParser.1.9.71' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'NUnit3TestAdapter.3.7.0' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Adding package 'log4net.2.0.8' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Adding package 'NUnit.3.6.1' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'log4net.2.0.8' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] Added package 'NUnit.3.6.1' to folder 'C:\projects\windbg-debug\src\packages'
+[00:00:29] 
+[00:00:29] NuGet Config files used:
+[00:00:29]     C:\Users\appveyor\AppData\Roaming\NuGet\NuGet.Config
+[00:00:29] 
+[00:00:29] Feeds used:
+[00:00:29]     C:\Users\appveyor\.nuget\packages\
+[00:00:29]     https://www.nuget.org/api/v2
+[00:00:29] 
+[00:00:29] Installed:
+[00:00:29]     7 package(s) to packages.config projects
+[00:00:29] Restoring C:/projects/windbg-debug/src/windbg-debug-tests/test-debuggees/cpp/src/CppDebuggee.sln
+[00:00:31] MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin\amd64'.
+[00:00:33] Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+[00:00:33] Finished executing task: Restore-Packages
+[00:00:33] 
+[00:00:33] ========================================
+[00:00:33] Build-Debugger
+[00:00:33] ========================================
+[00:00:33] Executing task: Build-Debugger
+[00:00:33] Microsoft (R) Build Engine version 14.0.25420.1
+[00:00:33] Copyright (C) Microsoft Corporation. All rights reserved.
+[00:00:33] 
+[00:00:33] Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+[00:00:34] Build started 6/23/2017 9:34:48 PM.
+[00:00:34] Project "C:\projects\windbg-debug\src\windbg-debug.sln" on node 1 (Build target(s)).
+[00:00:34] ValidateSolutionConfiguration:
+[00:00:34]   Building solution configuration "Release|Any CPU".
+[00:00:35] The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,37)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,70)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,38)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,71)" does not exist in the project, and will be ignored.
+[00:00:35] Project "C:\projects\windbg-debug\src\windbg-debug.sln" (1) is building "C:\projects\windbg-debug\src\windbg-debug\windbg-debug.csproj" (2) on node 1 (default targets).
+[00:00:35] PrepareForBuild:
+[00:00:35]   Creating directory "..\..\bin\".
+[00:00:35]   Creating directory "obj\Release\".
+[00:00:35] The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,37)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,70)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,38)" does not exist in the project, and will be ignored.
+[00:00:35] The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,71)" does not exist in the project, and will be ignored.
+[00:00:35] Project "C:\projects\windbg-debug\src\windbg-debug\windbg-debug.csproj" (2) is building "C:\projects\windbg-debug\src\VSCodeDebug\VSCodeDebug.csproj" (3) on node 1 (default targets).
+[00:00:35] PrepareForBuild:
+[00:00:35]   Creating directory "bin\Release\".
+[00:00:35]   Creating directory "obj\Release\".
+[00:00:35] CoreCompile:
+[00:00:35]   C:\Program Files (x86)\MSBuild\14.0\bin\amd64\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /keyfile:..\windbg-debug.snk /optimize+ /out:obj\Release\VSCodeDebug.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output Breakpoint.cs Capabilities.cs DebugSession.cs ErrorResponseBody.cs EvaluateResponseBody.cs ExitedEvent.cs InitializedEvent.cs Message.cs OutputEvent.cs Properties\AssemblyInfo.cs Protocol.cs Scope.cs ScopesResponseBody.cs SetBreakpointsResponseBody.cs Source.cs StackFrame.cs StackTraceResponseBody.cs StoppedEvent.cs TerminatedEvent.cs Thread.cs ThreadEvent.cs ThreadsResponseBody.cs Utilities.cs Variable.cs VariablesResponseBody.cs "C:\Users\appveyor\AppData\Local\Temp\1\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs"
+[00:00:36]   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin\amd64
+[00:00:42] _CopyFilesMarkedCopyLocal:
+[00:00:42]   Copying file from "C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" to "bin\Release\Newtonsoft.Json.dll".
+[00:00:42]   Copying file from "C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.xml" to "bin\Release\Newtonsoft.Json.xml".
+[00:00:42] CopyFilesToOutputDirectory:
+[00:00:42]   Copying file from "obj\Release\VSCodeDebug.dll" to "bin\Release\VSCodeDebug.dll".
+[00:00:42]   VSCodeDebug -> C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.dll
+[00:00:42]   Copying file from "obj\Release\VSCodeDebug.pdb" to "bin\Release\VSCodeDebug.pdb".
+[00:00:42] Done Building Project "C:\projects\windbg-debug\src\VSCodeDebug\VSCodeDebug.csproj" (default targets).
+[00:00:42] GenerateBindingRedirects:
+[00:00:42]   No suggested binding redirects from ResolveAssemblyReferences.
+[00:00:42] GenerateTargetFrameworkMonikerAttribute:
+[00:00:42] Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+[00:00:42] CoreCompile:
+[00:00:42]   C:\Program Files (x86)\MSBuild\14.0\bin\amd64\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:AnyCPU /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\projects\windbg-debug\src\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll /reference:C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:C:\projects\windbg-debug\src\packages\Microsoft.Diagnostics.Runtime.0.8.31-beta\lib\net40\Microsoft.Diagnostics.Runtime.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /reference:C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.dll /debug:pdbonly /filealign:512 /keyfile:..\windbg-debug.snk /optimize+ /out:obj\Release\windbg-debug.exe /ruleset:windbg-debug.ruleset /subsystemversion:6.00 /target:exe /utf8output /analyzer:..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll /analyzer:..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll /analyzer:..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll AssemblyHelpers.cs CommandLineOptions.cs Defaults.cs DynamicHelpers.cs Logging.cs Log4Net\ThresholdFilter.cs Program.cs Properties\AssemblyInfo.cs ReturnCodes.cs WinDbg\CommandExecutor.cs WinDbg\Data\BasicType.cs WinDbg\Data\Breakpoint.cs WinDbg\Data\DebuggeeThread.cs WinDbg\Data\Delegates.cs WinDbg\Data\IIndexedItem.cs WinDbg\Data\MessageRecord.cs WinDbg\Data\Scope.cs WinDbg\Data\Scopes.cs WinDbg\Data\StackTraceFrame.cs WinDbg\Data\TypedVariable.cs WinDbg\Data\Variable.cs WinDbg\Data\VariableDescription.cs WinDbg\DebuggerApi.cs WinDbg\DebuggerState.cs WinDbg\Data\DebuggedProcessInfo.cs WinDbg\ErrorCodes.cs WinDbg\EventCallbacks.cs WinDbg\Helpers\DebugControlExtensions.cs WinDbg\Helpers\ProcessExtensions.cs WinDbg\Helpers\SourceHelpers.cs WinDbg\Helpers\StringExtensions.cs WinDbg\Helpers\SymbolsExtensions.cs WinDbg\HResult.cs WinDbg\InputCallbacks.cs WinDbg\Messages\AttachMessage.cs WinDbg\Messages\ContinueMessage.cs WinDbg\Messages\EvaluateMessage.cs WinDbg\Messages\LaunchMessage.cs WinDbg\Messages\Message.cs WinDbg\Messages\PauseMessage.cs WinDbg\Messages\ScopesMessage.cs WinDbg\Messages\SetBreakpointsMessage.cs WinDbg\Messages\StackTraceMessage.cs WinDbg\Messages\StepIntoMessage.cs WinDbg\Messages\StepOutMessage.cs WinDbg\Messages\StepOverMessage.cs WinDbg\Messages\TerminateMessage.cs WinDbg\Messages\ThreadsMessage.cs WinDbg\Messages\VariablesMessage.cs WinDbg\NativeMethods.cs WinDbg\OutputCallbacks.cs WinDbg\Helpers\RequestHelper.cs WinDbg\Results\AttachMessageResult.cs WinDbg\Results\EvaluateMessageResult.cs WinDbg\Results\LaunchMessageResult.cs WinDbg\Results\MessageResult.cs WinDbg\Results\ScopesMessageResult.cs WinDbg\Results\SetBreakpointsMessageResult.cs WinDbg\Results\StackTraceMessageResult.cs WinDbg\Results\TerminateMessageResult.cs WinDbg\Results\ThreadsMessageResult.cs WinDbg\Results\VariablesMessageResult.cs WinDbg\Visualizers\DefaultVisualizer.cs WinDbg\Data\VisualizationResult.cs WinDbg\Visualizers\IVisualizer.cs WinDbg\Visualizers\RustEncodedEnumVisualizer.cs WinDbg\Visualizers\RustEnumVisualizer.cs WinDbg\Visualizers\VisualizerBase.cs WinDbg\Visualizers\RustSliceVisualizer.cs WinDbg\Visualizers\RustStringVisualizer.cs WinDbg\Visualizers\RustVectorVisualizer.cs WinDbg\Visualizers\RustWtf8Visualizer.cs WinDbg\Visualizers\VisualizerRegistry.cs WinDbg\WinDbgDebugSession.cs WinDbg\WinDbgWrapper.cs "C:\Users\appveyor\AppData\Local\Temp\1\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs"
+[00:00:42]   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin\amd64
+[00:00:44] _CopyFilesMarkedCopyLocal:
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll" to "..\..\bin\CommandLine.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.dll" to "..\..\bin\log4net.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\Microsoft.Diagnostics.Runtime.0.8.31-beta\lib\net40\Microsoft.Diagnostics.Runtime.dll" to "..\..\bin\Microsoft.Diagnostics.Runtime.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" to "..\..\bin\Newtonsoft.Json.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.dll" to "..\..\bin\VSCodeDebug.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.pdb" to "..\..\bin\VSCodeDebug.pdb".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.xml" to "..\..\bin\CommandLine.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.xml" to "..\..\bin\log4net.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\Microsoft.Diagnostics.Runtime.0.8.31-beta\lib\net40\Microsoft.Diagnostics.Runtime.xml" to "..\..\bin\Microsoft.Diagnostics.Runtime.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.xml" to "..\..\bin\Newtonsoft.Json.xml".
+[00:00:44] _CopyOutOfDateSourceItemsToOutputDirectory:
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\windbg-debug\log4net.config" to "..\..\bin\log4net.config".
+[00:00:44] _CopyAppConfigFile:
+[00:00:44]   Copying file from "app.config" to "..\..\bin\windbg-debug.exe.config".
+[00:00:44] CopyFilesToOutputDirectory:
+[00:00:44]   Copying file from "obj\Release\windbg-debug.exe" to "..\..\bin\windbg-debug.exe".
+[00:00:44]   windbg-debug -> C:\projects\windbg-debug\bin\windbg-debug.exe
+[00:00:44]   Copying file from "obj\Release\windbg-debug.pdb" to "..\..\bin\windbg-debug.pdb".
+[00:00:44] Done Building Project "C:\projects\windbg-debug\src\windbg-debug\windbg-debug.csproj" (default targets).
+[00:00:44] The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,37)" does not exist in the project, and will be ignored.
+[00:00:44] The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,70)" does not exist in the project, and will be ignored.
+[00:00:44] The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,38)" does not exist in the project, and will be ignored.
+[00:00:44] The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,71)" does not exist in the project, and will be ignored.
+[00:00:44] Project "C:\projects\windbg-debug\src\windbg-debug.sln" (1) is building "C:\projects\windbg-debug\src\windbg-debug-tests\windbg-debug-tests.csproj" (4) on node 1 (default targets).
+[00:00:44] PrepareForBuild:
+[00:00:44]   Creating directory "bin\Release\".
+[00:00:44]   Creating directory "obj\Release\".
+[00:00:44] GenerateTargetFrameworkMonikerAttribute:
+[00:00:44] Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+[00:00:44] CoreCompile:
+[00:00:44]   C:\Program Files (x86)\MSBuild\14.0\bin\amd64\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:C:\projects\windbg-debug\src\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /reference:C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.dll /reference:C:\projects\windbg-debug\bin\windbg-debug.exe /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\windbg-debug-tests.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output CppDebuggingTests.cs DebuggerApiExtensions.cs Const.cs Properties\AssemblyInfo.cs RustDebuggingTests.cs SetUpTests.cs VariableTree.cs "C:\Users\appveyor\AppData\Local\Temp\1\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs"
+[00:00:44]   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin\amd64
+[00:00:44] _CopyFilesMarkedCopyLocal:
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.dll" to "bin\Release\log4net.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll" to "bin\Release\nunit.framework.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.dll" to "bin\Release\VSCodeDebug.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\windbg-debug.exe" to "bin\Release\windbg-debug.exe".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\Newtonsoft.Json.dll" to "bin\Release\Newtonsoft.Json.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\CommandLine.dll" to "bin\Release\CommandLine.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\Microsoft.Diagnostics.Runtime.dll" to "bin\Release\Microsoft.Diagnostics.Runtime.dll".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\VSCodeDebug.pdb" to "bin\Release\VSCodeDebug.pdb".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\windbg-debug.pdb" to "bin\Release\windbg-debug.pdb".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\log4net.2.0.8\lib\net45-full\log4net.xml" to "bin\Release\log4net.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\packages\NUnit.3.6.1\lib\net45\nunit.framework.xml" to "bin\Release\nunit.framework.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\VSCodeDebug\bin\Release\Newtonsoft.Json.xml" to "bin\Release\Newtonsoft.Json.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\CommandLine.xml" to "bin\Release\CommandLine.xml".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\bin\Microsoft.Diagnostics.Runtime.xml" to "bin\Release\Microsoft.Diagnostics.Runtime.xml".
+[00:00:44] _CopyOutOfDateSourceItemsToOutputDirectory:
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\windbg-debug\log4net.config" to "bin\Release\log4net.config".
+[00:00:44]   Copying file from "C:\projects\windbg-debug\src\windbg-debug-tests\log4net.config" to "bin\Release\log4net.config".
+[00:00:44] _CopyAppConfigFile:
+[00:00:44]   Copying file from "app.config" to "bin\Release\windbg-debug-tests.dll.config".
+[00:00:44] CopyFilesToOutputDirectory:
+[00:00:44]   Copying file from "obj\Release\windbg-debug-tests.dll" to "bin\Release\windbg-debug-tests.dll".
+[00:00:44]   windbg-debug-tests -> C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\windbg-debug-tests.dll
+[00:00:44]   Copying file from "obj\Release\windbg-debug-tests.pdb" to "bin\Release\windbg-debug-tests.pdb".
+[00:00:44] Done Building Project "C:\projects\windbg-debug\src\windbg-debug-tests\windbg-debug-tests.csproj" (default targets).
+[00:00:44] Done Building Project "C:\projects\windbg-debug\src\windbg-debug.sln" (Build target(s)).
+[00:00:44] 
+[00:00:44] Build succeeded.
+[00:00:44]     0 Warning(s)
+[00:00:44]     0 Error(s)
+[00:00:44] 
+[00:00:44] Time Elapsed 00:00:10.23
+[00:00:44] Finished executing task: Build-Debugger
+[00:00:44] 
+[00:00:44] ========================================
+[00:00:44] Build-Cpp-Debuggee
+[00:00:44] ========================================
+[00:00:44] Executing task: Build-Cpp-Debuggee
+[00:00:44] Microsoft (R) Build Engine version 14.0.25420.1
+[00:00:44] Copyright (C) Microsoft Corporation. All rights reserved.
+[00:00:44] 
+[00:00:44] Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+[00:00:44] Build started 6/23/2017 9:34:59 PM.
+[00:00:45] Project "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\CppDebuggee.sln" on node 1 (Build target(s)).
+[00:00:45] ValidateSolutionConfiguration:
+[00:00:45]   Building solution configuration "Debug|x64".
+[00:00:45] The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,37)" does not exist in the project, and will be ignored.
+[00:00:45] The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (45,70)" does not exist in the project, and will be ignored.
+[00:00:45] The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,38)" does not exist in the project, and will be ignored.
+[00:00:45] The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (52,71)" does not exist in the project, and will be ignored.
+[00:00:46] Project "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\CppDebuggee.sln" (1) is building "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\CppDebuggee.vcxproj" (2) on node 1 (default targets).
+[00:00:46] PrepareForBuild:
+[00:00:46]   Creating directory "x64\Debug\".
+[00:00:46]   Creating directory "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\".
+[00:00:46]   Creating directory "x64\Debug\CppDebuggee.tlog\".
+[00:00:46] InitializeBuildStatus:
+[00:00:46]   Creating "x64\Debug\CppDebuggee.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[00:00:47] ClCompile:
+[00:00:47]   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"x64\Debug\CppDebuggee.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:queue stdafx.cpp
+[00:00:47]   stdafx.cpp
+[00:00:48]   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\CppDebuggee.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:queue main.cpp
+[00:00:48]   main.cpp
+[00:00:49] Link:
+[00:00:49]   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\CppDebuggee.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\CppDebuggee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\CppDebuggee.lib" /MACHINE:X64 x64\Debug\main.obj
+[00:00:49]   x64\Debug\stdafx.obj
+[00:00:50]   CppDebuggee.vcxproj -> C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\CppDebuggee.exe
+[00:00:50]   CppDebuggee.vcxproj -> C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\..\x64\Debug\CppDebuggee.pdb (Full PDB)
+[00:00:50] FinalizeBuildStatus:
+[00:00:50]   Deleting file "x64\Debug\CppDebuggee.tlog\unsuccessfulbuild".
+[00:00:50]   Touching "x64\Debug\CppDebuggee.tlog\CppDebuggee.lastbuildstate".
+[00:00:50] Done Building Project "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\CppDebuggee.vcxproj" (default targets).
+[00:00:50] Done Building Project "C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\src\CppDebuggee.sln" (Build target(s)).
+[00:00:50] 
+[00:00:50] Build succeeded.
+[00:00:50]     0 Warning(s)
+[00:00:50]     0 Error(s)
+[00:00:50] 
+[00:00:50] Time Elapsed 00:00:05.58
+[00:00:50] Finished executing task: Build-Cpp-Debuggee
+[00:00:50] 
+[00:00:50] ========================================
+[00:00:50] Install-Rust
+[00:00:50] ========================================
+[00:00:50] Executing task: Install-Rust
+[00:00:52] Cake.exe : verbose: creating home directory: 'C:\Users\appveyor\.rustup'
+[00:00:52] At line:1 char:1
+[00:00:52] + & "C:\projects\windbg-debug\build\tools\Cake\Cake.exe" "./build/build ...
+[00:00:52] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[00:00:52]     + CategoryInfo          : NotSpecified: (verbose: creati...pveyor\.rustup':String) [], RemoteException
+[00:00:52]     + FullyQualifiedErrorId : NativeCommandError
+[00:00:52]  
+[00:00:52] verbose: 
+[00:00:52] creating update-hash directory: 'C:\Users\appveyor\.rustup\update-hashes'
+[00:00:52] 
+[00:00:52] verbose: 
+[00:00:52] installing toolchain 'stable-x86_64-pc-windows-msvc'
+[00:00:52] verbose: toolchain directory: 'C:\Users\appveyor\.rustup\toolchains\stable-x86_64-pc-windows-msvc'
+[00:00:52] info: syncing channel updates for 'stable-x86_64-pc-windows-msvc'
+[00:00:52] verbose: creating temp root: C:\Users\appveyor\.rustup\tmp
+[00:00:52] 
+[00:00:52] verbose: 
+[00:00:52] creating temp file: C:\Users\appveyor\.rustup\tmp\9eon2064ibsq1vh2_file
+[00:00:52] verbose: downloading file from: 'https://static.rust-lang.org/dist/channel-rust-stable.toml.sha256'
+[00:00:52] verbose: downloading with curl
+[00:00:52] 
+[00:00:53] verbose: 
+[00:00:53] deleted temp file: C:\Users\appveyor\.rustup\tmp\9eon2064ibsq1vh2_file
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] no update hash at: '
+[00:00:53] C:\Users\appveyor\.rustup\update-hashes\stable-x86_64-pc-windows-msvc
+[00:00:53] '
+[00:00:53] 
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] creating temp file: 
+[00:00:53] C:\Users\appveyor\.rustup\tmp\_p023dzsru5vygjz_file.toml
+[00:00:53] 
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] downloading file from: '
+[00:00:53] https://static.rust-lang.org/dist/channel-rust-stable.toml
+[00:00:53] '
+[00:00:53] 
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] downloading with curl
+[00:00:53] 
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] checksum passed
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] deleted temp file: C:\Users\appveyor\.rustup\tmp\_p023dzsru5vygjz_file.toml
+[00:00:53] 
+[00:00:53] info: 
+[00:00:53] latest update on 2017-06-08, rust version 1.18.0 (03fc9d622 2017-06-06)
+[00:00:53] info: downloading component 'rustc'
+[00:00:53] verbose: creating Download Directory directory: 'C:\Users\appveyor\.rustup\downloads'
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] downloading file from: 'https://static.rust-lang.org/dist/2017-06-08/rustc-1.18.0-x86_64-pc-windows-msvc.tar.gz'
+[00:00:53] 
+[00:00:53] verbose: 
+[00:00:53] downloading with curl
+[00:00:53] 
+[00:00:55] verbose: 
+[00:00:55] checksum passed
+[00:00:55] 
+[00:00:55] info: 
+[00:00:55] downloading component '
+[00:00:55] rust-std
+[00:00:55] '
+[00:00:55] 
+[00:00:55] 
+[00:00:55] verbose: 
+[00:00:55] downloading file from: '
+[00:00:55] https://static.rust-lang.org/dist/2017-06-08/rust-std-1.18.0-x86_64-pc-windows-msvc.tar.gz
+[00:00:55] '
+[00:00:55] 
+[00:00:55] 
+[00:00:55] verbose: 
+[00:00:55] downloading with curl
+[00:00:55] 
+[00:00:55] 
+[00:00:57] verbose: 
+[00:00:57] checksum passed
+[00:00:57] 
+[00:00:57] info: 
+[00:00:57] downloading component '
+[00:00:57] cargo
+[00:00:57] '
+[00:00:57] 
+[00:00:57] 
+[00:00:57] verbose: 
+[00:00:57] downloading file from: '
+[00:00:57] https://static.rust-lang.org/dist/2017-06-08/cargo-0.19.0-x86_64-pc-windows-msvc.tar.gz
+[00:00:57] '
+[00:00:57] 
+[00:00:57] 
+[00:00:57] verbose: 
+[00:00:57] downloading with curl
+[00:00:57] 
+[00:00:57] 
+[00:00:57] verbose: 
+[00:00:57] checksum passed
+[00:00:57] 
+[00:00:57] info: 
+[00:00:57] downloading component 'rust-docs'
+[00:00:57] 
+[00:00:57] verbose: 
+[00:00:57] downloading file from: 'https://static.rust-lang.org/dist/2017-06-08/rust-docs-1.18.0-x86_64-pc-windows-msvc.tar.gz
+[00:00:57] '
+[00:00:57] 
+[00:00:57] 
+[00:00:57] verbose: 
+[00:00:57] downloading with curl
+[00:00:57] 
+[00:00:57] 
+[00:00:58] verbose: 
+[00:00:58] checksum passed
+[00:00:58] 
+[00:00:58] info: 
+[00:00:58] installing component 'rustc'
+[00:00:58] 
+[00:00:58] verbose: 
+[00:00:58] creating temp directory: C:\Users\appveyor\.rustup\tmp\w9tf6oek45_eyrsi_dir
+[00:00:58] 
+[00:01:00] verbose: 
+[00:01:00] deleted temp directory: C:\Users\appveyor\.rustup\tmp\w9tf6oek45_eyrsi_dir
+[00:01:00] 
+[00:01:00] info: 
+[00:01:00] installing component '
+[00:01:00] rust-std
+[00:01:00] '
+[00:01:00] 
+[00:01:00] 
+[00:01:00] verbose: 
+[00:01:00] creating temp directory: 
+[00:01:00] C:\Users\appveyor\.rustup\tmp\h_cchjp5cmsvg21y_dir
+[00:01:00] 
+[00:01:00] 
+[00:01:03] verbose: 
+[00:01:03] creating temp file: C:\Users\appveyor\.rustup\tmp\1u1tossvy3sahr0m_file
+[00:01:03] 
+[00:01:04] verbose: 
+[00:01:04] creating temp file: C:\Users\appveyor\.rustup\tmp\nzwwq8hp0ysm9hzx_file
+[00:01:04] 
+[00:01:07] verbose: 
+[00:01:07] deleted temp directory: C:\Users\appveyor\.rustup\tmp\h_cchjp5cmsvg21y_dir
+[00:01:07] 
+[00:01:07] info: 
+[00:01:07] installing component '
+[00:01:07] cargo
+[00:01:07] '
+[00:01:07] 
+[00:01:07] 
+[00:01:07] verbose: 
+[00:01:07] creating temp directory: 
+[00:01:07] C:\Users\appveyor\.rustup\tmp\g1b9lci2p5fcervv_dir
+[00:01:07] 
+[00:01:07] 
+[00:01:07] verbose: 
+[00:01:07] creating temp file: C:\Users\appveyor\.rustup\tmp\sc1vyv5mburkjvo4_file
+[00:01:07] 
+[00:01:07] verbose: 
+[00:01:07] creating temp file: C:\Users\appveyor\.rustup\tmp\33dfwpvivcg2kq3k_file
+[00:01:07] 
+[00:01:07] verbose: 
+[00:01:07] deleted temp directory: C:\Users\appveyor\.rustup\tmp\g1b9lci2p5fcervv_dir
+[00:01:07] 
+[00:01:07] info: 
+[00:01:07] installing component '
+[00:01:07] rust-docs
+[00:01:07] '
+[00:01:07] 
+[00:01:07] 
+[00:01:07] verbose: 
+[00:01:07] creating temp directory: 
+[00:01:07] C:\Users\appveyor\.rustup\tmp\r2imr7ehvoitr7f8_dir
+[00:01:07] 
+[00:01:07] 
+[00:01:20] verbose: 
+[00:01:20] creating temp file: C:\Users\appveyor\.rustup\tmp\ym1ev15isxuy8yko_file
+[00:01:20] 
+[00:01:20] verbose: 
+[00:01:20] creating temp file: C:\Users\appveyor\.rustup\tmp\83rf5rlp2kl4aafw_file
+[00:01:20] 
+[00:01:20] verbose: 
+[00:01:20] deleted temp directory: C:\Users\appveyor\.rustup\tmp\r2imr7ehvoitr7f8_dir
+[00:01:20] 
+[00:01:20] verbose: 
+[00:01:20] deleted temp file: C:\Users\appveyor\.rustup\tmp\1u1tossvy3sahr0m_file
+[00:01:20] 
+[00:01:20] verbose: 
+[00:01:20] deleted temp file: C:\Users\appveyor\.rustup\tmp\nzwwq8hp0ysm9hzx_file
+[00:01:20] verbose: deleted temp file: C:\Users\appveyor\.rustup\tmp\sc1vyv5mburkjvo4_file
+[00:01:20] verbose: deleted temp file: C:\Users\appveyor\.rustup\tmp\33dfwpvivcg2kq3k_file
+[00:01:20] verbose: deleted temp file: C:\Users\appveyor\.rustup\tmp\ym1ev15isxuy8yko_file
+[00:01:20] 
+[00:01:20] verbose: 
+[00:01:20] deleted temp file: C:\Users\appveyor\.rustup\tmp\83rf5rlp2kl4aafw_file
+[00:01:20] 
+[00:01:20] 
+[00:01:21] verbose: 
+[00:01:21] toolchain 'stable-x86_64-pc-windows-msvc' installed
+[00:01:21] 
+[00:01:21] info: 
+[00:01:21] default toolchain set to 'stable'
+[00:01:21] 
+[00:01:21] 
+[00:01:21]   stable installed - rustc 1.18.0 (03fc9d622 2017-06-06)
+[00:01:21] 
+[00:01:21] Finished executing task: Install-Rust
+[00:01:21] 
+[00:01:21] ========================================
+[00:01:21] Build-Rust-Debuggee
+[00:01:21] ========================================
+[00:01:21] Executing task: Build-Rust-Debuggee
+[00:01:21] Current PATH: C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\7-Zip;C:\Program Files\Microsoft\Web Platform Installer\;C:\Tools\GitVersion;C:\Tools\PsTools;C:\Program Files\Git LFS;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Tools\WebDriver;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.4\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Ruby193\bin;C:\Tools\NUnit\bin;C:\Tools\xUnit;C:\Tools\MSpec;C:\Tools\Coverity\bin;C:\Program Files (x86)\CMake\bin;C:\go\bin;C:\Program Files\Java\jdk1.8.0\bin;C:\Python27;C:\Program Files\nodejs;C:\Program Files (x86)\iojs;C:\Program Files\iojs;C:\Users\appveyor\AppData\Roaming\npm;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Tools\NuGet;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Apache\Maven\bin;C:\Python27\Scripts;C:\Tools\NUnit3;C:\Program Files\Mercurial\;C:\Program Files\LLVM\bin;C:\Program Files\dotnet\;C:\Program Files\erl8.3\bin;C:\Tools\curl\bin;C:\Program Files\Amazon\AWSCLI\;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Users\appveyor\AppData\Roaming\npm;C:\Users\appveyor\AppData\Local\Yarn\bin;C:\Program Files\AppVeyor\BuildAgent\;C:\Users\appveyor\.cargo\bin
+[00:01:21] Cargo files:
+[00:01:21] info: 
+[00:01:21] using existing install for 'stable-x86_64-pc-windows-msvc'
+[00:01:21] 
+[00:01:22] info: 
+[00:01:22] default toolchain set to 'stable-x86_64-pc-windows-msvc'
+[00:01:22] 
+[00:01:22] 
+[00:01:22]   stable-x86_64-pc-windows-msvc unchanged - rustc 1.18.0 (03fc9d622 2017-06-06)
+[00:01:22] 
+[00:01:22]  
+[00:01:22]   Compiling debugger_test v0.1.0 (file:///C:/projects/windbg-debug/src/windbg-debug-tests/test-debuggees/rust)
+[00:01:22] 
+[00:01:25]  
+[00:01:25]    Finished dev [unoptimized + debuginfo] target(s) in 2.93 secs
+[00:01:25] 
+[00:01:25] info: 
+[00:01:25] syncing channel updates for 'stable-i686-pc-windows-msvc'
+[00:01:25] 
+[00:01:25] info: 
+[00:01:25] latest update on 2017-06-08, rust version 1.18.0 (03fc9d622 2017-06-06)
+[00:01:25] 
+[00:01:25] info: 
+[00:01:25] downloading component 'rustc'
+[00:01:25] 
+[00:01:27] info: 
+[00:01:27] downloading component 'rust-std'
+[00:01:27] 
+[00:01:28] info: 
+[00:01:28] downloading component 'cargo'
+[00:01:28] 
+[00:01:28] info: 
+[00:01:28] downloading component 'rust-docs'
+[00:01:28] 
+[00:01:29] info: 
+[00:01:29] installing component 'rustc'
+[00:01:29] 
+[00:01:30] info: 
+[00:01:30] installing component 'rust-std'
+[00:01:30] 
+[00:01:32] info: 
+[00:01:32] installing component 'cargo'
+[00:01:32] 
+[00:01:33] info: 
+[00:01:33] installing component 'rust-docs'
+[00:01:33] 
+[00:01:42] info: 
+[00:01:42] default toolchain set to 'stable-i686-pc-windows-msvc'
+[00:01:42] 
+[00:01:42] 
+[00:01:44]   stable-i686-pc-windows-msvc installed - rustc 1.18.0 (03fc9d622 2017-06-06)
+[00:01:44] 
+[00:01:44]  
+[00:01:44]   Compiling debugger_test v0.1.0 (file:///C:/projects/windbg-debug/src/windbg-debug-tests/test-debuggees/rust)
+[00:01:44] 
+[00:01:47]  
+[00:01:47]    Finished dev [unoptimized + debuginfo] target(s) in 2.85 secs
+[00:01:47] 
+[00:01:47] info: 
+[00:01:47] downloading component 'rust-src'
+[00:01:47] 
+[00:01:48] info: 
+[00:01:48] installing component 'rust-src'
+[00:01:48] 
+[00:02:24] Finished executing task: Build-Rust-Debuggee
+[00:02:24] 
+[00:02:24] ========================================
+[00:02:24] Build
+[00:02:24] ========================================
+[00:02:24] Executing task: Build
+[00:02:24] Finished executing task: Build
+[00:02:24] 
+[00:02:24] Task                          Duration            
+[00:02:24] --------------------------------------------------
+[00:02:24] Restore-Packages              00:00:11.0636487    
+[00:02:24] Build-Debugger                00:00:10.6544574    
+[00:02:24] Build-Cpp-Debuggee            00:00:05.9857639    
+[00:02:24] Install-Rust                  00:00:31.5774161    
+[00:02:24] Build-Rust-Debuggee           00:01:02.2566684    
+[00:02:24] Build                         00:00:00.0003755    
+[00:02:24] --------------------------------------------------
+[00:02:24] Total:                        00:02:01.5383300    
+[00:02:24] Discovering tests...OK
+[00:02:24] nunit3-console "C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\windbg-debug-tests.dll"
+[00:02:25] NUnit Console Runner 3.6.1 
+[00:02:25] Copyright (C) 2017 Charlie Poole
+[00:02:25] 
+[00:02:25] Runtime Environment
+[00:02:25]    OS Version: Microsoft Windows NT 6.3.9600.0
+[00:02:25]   CLR Version: 4.0.30319.42000
+[00:02:25] 
+[00:02:25] Test Files
+[00:02:25]     C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\windbg-debug-tests.dll
+[00:02:25] 
+[00:02:32] => windbg_debug_tests.CppDebuggingTests.Run_WithBreakpoint_StopsAtBreakpoint
+[00:02:32] 2017-06-23 21:36:42,417 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:32] 2017-06-23 21:36:43,027 DEBUG OutputCallbacks - 
+[00:02:32] Microsoft (R) Windows Debugger Version 10.0.14321.1024 AMD64
+[00:02:32] Copyright (c) Microsoft Corporation. All rights reserved.
+[00:02:32] 
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,042 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,105 DEBUG OutputCallbacks - Symbol search path is: srv*
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,105 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,105 DEBUG OutputCallbacks - ModLoad: 00007ff7`78af0000 00007ff7`78b32000   CppDebuggee.exe
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,120 DEBUG OutputCallbacks - 
+[00:02:32] ************* Symbol Path validation summary **************
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,120 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,120 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - 
+[00:02:32] ************* Symbol Path validation summary **************
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - 
+[00:02:32] "
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - CppDebuggee" was not found in the image list.
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - Debugger will attempt to load "CppDebuggee" at given base 00000000`00000000.
+[00:02:32] 
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,906 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:32] for more reliable results.Base address and size overrides can be given as
+[00:02:32] .reload <image.ext>=<base>,<size>.
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,969 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:43,969 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for CppDebuggee.exe
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:44,127 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:32] 2017-06-23 21:36:44,127 DEBUG DebuggerApi - 	main.cpp : #33
+[00:02:32] 2017-06-23 21:36:46,141 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,141 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,141 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,141 DEBUG OutputCallbacks - ModLoad: 00007ffa`cb300000 00007ffa`cb3f6000   C:\windows\SYSTEM32\MSVCP140D.dll
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,156 DEBUG OutputCallbacks - ModLoad: 00007ffa`d6660000 00007ffa`d6682000   C:\windows\SYSTEM32\VCRUNTIME140D.dll
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,156 DEBUG OutputCallbacks - ModLoad: 00007ffa`cb140000 00007ffa`cb2fe000   C:\windows\SYSTEM32\ucrtbased.dll
+[00:02:32] 
+[00:02:32] 2017-06-23 21:36:46,188 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:32] 
+[00:02:35] => windbg_debug_tests.CppDebuggingTests.Run_WithBreakpointAtTheEnd_ShowsLocalVariables
+[00:02:35] 2017-06-23 21:36:47,230 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - 
+[00:02:35] ************* Symbol Path validation summary **************
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - ModLoad: 00007ff7`78af0000 00007ff7`78b32000   CppDebuggee.exe
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - 
+[00:02:35] ************* Symbol Path validation summary **************
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,724 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - 
+[00:02:35] ************* Symbol Path validation summary **************
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - 
+[00:02:35] "
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - CppDebuggee" was not found in the image list.
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - Debugger will attempt to load "CppDebuggee" at given base 00000000`00000000.
+[00:02:35] 
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:35] for more reliable results.Base address and size overrides can be given as
+[00:02:35] .reload <image.ext>=<base>,<size>.
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,755 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,771 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for CppDebuggee.exe
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:47,802 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:35] 2017-06-23 21:36:47,802 DEBUG DebuggerApi - 	main.cpp : #33
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`cd160000 00007ffa`cd256000   C:\windows\SYSTEM32\MSVCP140D.dll
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`d6660000 00007ffa`d6682000   C:\windows\SYSTEM32\VCRUNTIME140D.dll
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - ModLoad: 00007ffa`cb240000 00007ffa`cb3fe000   C:\windows\SYSTEM32\ucrtbased.dll
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:49,821 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:50,352 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\system32\KERNEL32.DLL - 
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:50,352 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:02:35] 
+[00:02:35] 2017-06-23 21:36:50,728 DEBUG OutputCallbacks - Unable to deliver callback, 31
+[00:02:35] 
+[00:02:38] => windbg_debug_tests.CppDebuggingTests.Run_WithoutBreakPoints_Closes
+[00:02:38] 2017-06-23 21:36:50,759 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - 
+[00:02:38] ************* Symbol Path validation summary **************
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - ModLoad: 00007ff7`78af0000 00007ff7`78b32000   CppDebuggee.exe
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - 
+[00:02:38] ************* Symbol Path validation summary **************
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,273 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - 
+[00:02:38] ************* Symbol Path validation summary **************
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - 
+[00:02:38] "
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - CppDebuggee" was not found in the image list.
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - Debugger will attempt to load "CppDebuggee" at given base 00000000`00000000.
+[00:02:38] 
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,304 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:38] for more reliable results.Base address and size overrides can be given as
+[00:02:38] .reload <image.ext>=<base>,<size>.
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,320 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:51,320 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for CppDebuggee.exe
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`cd160000 00007ffa`cd256000   C:\windows\SYSTEM32\MSVCP140D.dll
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`d6660000 00007ffa`d6682000   C:\windows\SYSTEM32\VCRUNTIME140D.dll
+[00:02:38] 
+[00:02:38] 2017-06-23 21:36:53,386 DEBUG OutputCallbacks - ModLoad: 00007ffa`cb240000 00007ffa`cb3fe000   C:\windows\SYSTEM32\ucrtbased.dll
+[00:02:38] 
+[00:02:42] => windbg_debug_tests.CppDebuggingTests.StepInto_WithFunction_GoesIntoFunction
+[00:02:42] 2017-06-23 21:36:53,433 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug\CppDebuggee.exe 
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - 
+[00:02:42] ************* Symbol Path validation summary **************
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,942 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,945 DEBUG OutputCallbacks - ModLoad: 00007ff7`78af0000 00007ff7`78b32000   CppDebuggee.exe
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,945 DEBUG OutputCallbacks - 
+[00:02:42] ************* Symbol Path validation summary **************
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,945 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,945 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - 
+[00:02:42] ************* Symbol Path validation summary **************
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - 
+[00:02:42] "
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - CppDebuggee" was not found in the image list.
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - Debugger will attempt to load "CppDebuggee" at given base 00000000`00000000.
+[00:02:42] 
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:42] for more reliable results.Base address and size overrides can be given as
+[00:02:42] .reload <image.ext>=<base>,<size>.
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:53,979 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for CppDebuggee.exe
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:54,026 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:42] 2017-06-23 21:36:54,026 DEBUG DebuggerApi - 	main.cpp : #13
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`cd160000 00007ffa`cd256000   C:\windows\SYSTEM32\MSVCP140D.dll
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`d6660000 00007ffa`d6682000   C:\windows\SYSTEM32\VCRUNTIME140D.dll
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - ModLoad: 00007ffa`cb240000 00007ffa`cb3fe000   C:\windows\SYSTEM32\ucrtbased.dll
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,039 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,653 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\system32\KERNEL32.DLL - 
+[00:02:42] 
+[00:02:42] 2017-06-23 21:36:56,653 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:02:42] 
+[00:02:45] => windbg_debug_tests.RustDebuggingTests("rust\target\i686-pc-windows-msvc\debu...").Run_FileWithDynamicStrings_DecodesStringsCorrectly
+[00:02:45] 2017-06-23 21:36:57,229 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - 
+[00:02:45] ************* Symbol Path validation summary **************
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\cpp\x64\Debug
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - ModLoad: 00000000`00130000 00000000`00152000   debugger_test-39f01acd7da8dd21.exe
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - 
+[00:02:45] ************* Symbol Path validation summary **************
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,733 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - 
+[00:02:45] ************* Symbol Path validation summary **************
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - 
+[00:02:45] "
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:02:45] 
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:45] for more reliable results.Base address and size overrides can be given as
+[00:02:45] .reload <image.ext>=<base>,<size>.
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,777 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,792 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-39f01acd7da8dd21.exe
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:57,824 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:45] 2017-06-23 21:36:57,824 DEBUG DebuggerApi - 	main.rs : #109
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`77d30000 00000000`77e9f000   ntdll.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`77c60000 00000000`77cab000   C:\windows\SYSTEM32\wow64.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`77cb0000 00000000`77d18000   C:\windows\system32\wow64win.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`77d20000 00000000`77d29000   C:\windows\system32\wow64cpu.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`00390000 00000000`004ce000   WOW64_IMAGE_SECTION
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   WOW64_IMAGE_SECTION
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`00390000 00000000`004ce000   NOT_AN_IMAGE
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`00390000 00000000`00507000   NOT_AN_IMAGE
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   C:\windows\SysWOW64\KERNEL32.DLL
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`75850000 00000000`75927000   C:\windows\SysWOW64\KERNELBASE.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,841 DEBUG OutputCallbacks - ModLoad: 00000000`75410000 00000000`754b0000   C:\windows\SysWOW64\apphelp.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - SHIMVIEW: ShimInfo(Complete)
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753f0000 00000000`75405000   C:\windows\SysWOW64\VCRUNTIME140.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753e0000 00000000`753e4000   C:\windows\SysWOW64\api-ms-win-crt-string-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753d0000 00000000`753d4000   C:\windows\SysWOW64\api-ms-win-crt-runtime-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753c0000 00000000`753c5000   C:\windows\SysWOW64\api-ms-win-crt-math-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753b0000 00000000`753b4000   C:\windows\SysWOW64\api-ms-win-crt-stdio-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`753a0000 00000000`753a3000   C:\windows\SysWOW64\api-ms-win-crt-locale-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`75390000 00000000`75393000   C:\windows\SysWOW64\api-ms-win-crt-heap-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,857 DEBUG OutputCallbacks - ModLoad: 00000000`75380000 00000000`75384000   C:\windows\SysWOW64\api-ms-win-crt-convert-l1-1-0.dll
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,874 DEBUG OutputCallbacks - ModLoad: 00000000`75290000 00000000`75371000   C:\windows\SysWOW64\ucrtbase.DLL
+[00:02:45] 
+[00:02:45] 2017-06-23 21:36:59,874 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:45] 
+[00:02:45] 2017-06-23 21:37:00,389 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\SysWOW64\KERNEL32.DLL - 
+[00:02:45] 
+[00:02:45] 2017-06-23 21:37:00,436 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:02:45] 
+[00:02:45] 2017-06-23 21:37:00,468 INFO  DebuggerApi - Terminating ..
+[00:02:49] => windbg_debug_tests.RustDebuggingTests("rust\target\i686-pc-windows-msvc\debu...").Run_WithBreakpoint_StopsAtBreakpoint
+[00:02:49] 2017-06-23 21:37:00,514 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - 
+[00:02:49] ************* Symbol Path validation summary **************
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - ModLoad: 00000000`00130000 00000000`00152000   debugger_test-39f01acd7da8dd21.exe
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - 
+[00:02:49] ************* Symbol Path validation summary **************
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,025 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - 
+[00:02:49] ************* Symbol Path validation summary **************
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - 
+[00:02:49] "
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:02:49] 
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:49] for more reliable results.Base address and size overrides can be given as
+[00:02:49] .reload <image.ext>=<base>,<size>.
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,056 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-39f01acd7da8dd21.exe
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:01,072 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:49] 2017-06-23 21:37:01,072 DEBUG DebuggerApi - 	main.rs : #102
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`77d30000 00000000`77e9f000   ntdll.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`77c60000 00000000`77cab000   C:\windows\SYSTEM32\wow64.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`77cb0000 00000000`77d18000   C:\windows\system32\wow64win.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`77d20000 00000000`77d29000   C:\windows\system32\wow64cpu.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`01230000 00000000`0136e000   WOW64_IMAGE_SECTION
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   WOW64_IMAGE_SECTION
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`01230000 00000000`0136e000   NOT_AN_IMAGE
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`01230000 00000000`013a7000   NOT_AN_IMAGE
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   C:\windows\SysWOW64\KERNEL32.DLL
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75850000 00000000`75927000   C:\windows\SysWOW64\KERNELBASE.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75490000 00000000`754a5000   C:\windows\SysWOW64\VCRUNTIME140.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75480000 00000000`75484000   C:\windows\SysWOW64\api-ms-win-crt-string-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75470000 00000000`75474000   C:\windows\SysWOW64\api-ms-win-crt-runtime-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75460000 00000000`75465000   C:\windows\SysWOW64\api-ms-win-crt-math-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75450000 00000000`75454000   C:\windows\SysWOW64\api-ms-win-crt-stdio-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75440000 00000000`75443000   C:\windows\SysWOW64\api-ms-win-crt-locale-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75430000 00000000`75433000   C:\windows\SysWOW64\api-ms-win-crt-heap-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75420000 00000000`75424000   C:\windows\SysWOW64\api-ms-win-crt-convert-l1-1-0.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - ModLoad: 00000000`75330000 00000000`75411000   C:\windows\SysWOW64\ucrtbase.DLL
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,081 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75320000 75329000   C:\windows\SysWOW64\kernel.appcore.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75ab0000 75b73000   C:\windows\SysWOW64\msvcrt.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75f60000 7601a000   C:\windows\SysWOW64\RPCRT4.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75d60000 75d7e000   C:\windows\SysWOW64\SspiCli.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75510000 7551a000   C:\windows\SysWOW64\CRYPTBASE.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 75d10000 75d51000   C:\windows\SysWOW64\sechost.dll
+[00:02:49] 
+[00:02:49] 2017-06-23 21:37:03,596 DEBUG OutputCallbacks - ModLoad: 754b0000 75504000   C:\windows\SysWOW64\bcryptPrimitives.dll
+[00:02:49] 
+[00:02:52] => windbg_debug_tests.RustDebuggingTests("rust\target\i686-pc-windows-msvc\debu...").Run_WithBreakpointAtTheEnd_ShowsLocalVariables
+[00:02:52] 2017-06-23 21:37:04,134 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - 
+[00:02:52] ************* Symbol Path validation summary **************
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - ModLoad: 00000000`00130000 00000000`00152000   debugger_test-39f01acd7da8dd21.exe
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - 
+[00:02:52] ************* Symbol Path validation summary **************
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,648 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - 
+[00:02:52] ************* Symbol Path validation summary **************
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - 
+[00:02:52] "
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:02:52] 
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:52] for more reliable results.Base address and size overrides can be given as
+[00:02:52] .reload <image.ext>=<base>,<size>.
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,679 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-39f01acd7da8dd21.exe
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:04,698 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:52] 2017-06-23 21:37:04,698 DEBUG DebuggerApi - 	main.rs : #102
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`77d30000 00000000`77e9f000   ntdll.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`77c60000 00000000`77cab000   C:\windows\SYSTEM32\wow64.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`77cb0000 00000000`77d18000   C:\windows\system32\wow64win.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`77d20000 00000000`77d29000   C:\windows\system32\wow64cpu.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`00410000 00000000`0054e000   WOW64_IMAGE_SECTION
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   WOW64_IMAGE_SECTION
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`00410000 00000000`0054e000   NOT_AN_IMAGE
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`00410000 00000000`00587000   NOT_AN_IMAGE
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   C:\windows\SysWOW64\KERNEL32.DLL
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75850000 00000000`75927000   C:\windows\SysWOW64\KERNELBASE.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75490000 00000000`754a5000   C:\windows\SysWOW64\VCRUNTIME140.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75480000 00000000`75484000   C:\windows\SysWOW64\api-ms-win-crt-string-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75470000 00000000`75474000   C:\windows\SysWOW64\api-ms-win-crt-runtime-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75460000 00000000`75465000   C:\windows\SysWOW64\api-ms-win-crt-math-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75450000 00000000`75454000   C:\windows\SysWOW64\api-ms-win-crt-stdio-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75440000 00000000`75443000   C:\windows\SysWOW64\api-ms-win-crt-locale-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75430000 00000000`75433000   C:\windows\SysWOW64\api-ms-win-crt-heap-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75420000 00000000`75424000   C:\windows\SysWOW64\api-ms-win-crt-convert-l1-1-0.dll
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - ModLoad: 00000000`75330000 00000000`75411000   C:\windows\SysWOW64\ucrtbase.DLL
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:06,708 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:07,223 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\SysWOW64\KERNEL32.DLL - 
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:07,223 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:02:52] 
+[00:02:52] 2017-06-23 21:37:07,286 DEBUG OutputCallbacks - Unable to deliver callback, 31
+[00:02:52] 
+[00:02:54] => windbg_debug_tests.RustDebuggingTests("rust\target\i686-pc-windows-msvc\debu...").Run_WithoutBreakPoints_Closes
+[00:02:54] 2017-06-23 21:37:07,317 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - 
+[00:02:54] ************* Symbol Path validation summary **************
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - ModLoad: 00000000`00130000 00000000`00152000   debugger_test-39f01acd7da8dd21.exe
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - 
+[00:02:54] ************* Symbol Path validation summary **************
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,825 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - 
+[00:02:54] ************* Symbol Path validation summary **************
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - 
+[00:02:54] "
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:02:54] 
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:54] for more reliable results.Base address and size overrides can be given as
+[00:02:54] .reload <image.ext>=<base>,<size>.
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:07,860 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-39f01acd7da8dd21.exe
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`77d30000 00000000`77e9f000   ntdll.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`77c60000 00000000`77cab000   C:\windows\SYSTEM32\wow64.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`77cb0000 00000000`77d18000   C:\windows\system32\wow64win.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`77d20000 00000000`77d29000   C:\windows\system32\wow64cpu.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`00cc0000 00000000`00dfe000   WOW64_IMAGE_SECTION
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   WOW64_IMAGE_SECTION
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`00cc0000 00000000`00dfe000   NOT_AN_IMAGE
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`00cc0000 00000000`00e37000   NOT_AN_IMAGE
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   C:\windows\SysWOW64\KERNEL32.DLL
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,881 DEBUG OutputCallbacks - ModLoad: 00000000`75850000 00000000`75927000   C:\windows\SysWOW64\KERNELBASE.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75490000 00000000`754a5000   C:\windows\SysWOW64\VCRUNTIME140.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75480000 00000000`75484000   C:\windows\SysWOW64\api-ms-win-crt-string-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75470000 00000000`75474000   C:\windows\SysWOW64\api-ms-win-crt-runtime-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75460000 00000000`75465000   C:\windows\SysWOW64\api-ms-win-crt-math-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75450000 00000000`75454000   C:\windows\SysWOW64\api-ms-win-crt-stdio-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75440000 00000000`75443000   C:\windows\SysWOW64\api-ms-win-crt-locale-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75430000 00000000`75433000   C:\windows\SysWOW64\api-ms-win-crt-heap-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75420000 00000000`75424000   C:\windows\SysWOW64\api-ms-win-crt-convert-l1-1-0.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 00000000`75330000 00000000`75411000   C:\windows\SysWOW64\ucrtbase.DLL
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75320000 75329000   C:\windows\SysWOW64\kernel.appcore.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75ab0000 75b73000   C:\windows\SysWOW64\msvcrt.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75f60000 7601a000   C:\windows\SysWOW64\RPCRT4.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75d60000 75d7e000   C:\windows\SysWOW64\SspiCli.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75510000 7551a000   C:\windows\SysWOW64\CRYPTBASE.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 75d10000 75d51000   C:\windows\SysWOW64\sechost.dll
+[00:02:54] 
+[00:02:54] 2017-06-23 21:37:09,885 DEBUG OutputCallbacks - ModLoad: 754b0000 75504000   C:\windows\SysWOW64\bcryptPrimitives.dll
+[00:02:54] 
+[00:02:58] => windbg_debug_tests.RustDebuggingTests("rust\target\i686-pc-windows-msvc\debu...").StepInto_StdLib_ShouldUseRustSources
+[00:02:58] 2017-06-23 21:37:09,947 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug\debugger_test.exe 
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - 
+[00:02:58] ************* Symbol Path validation summary **************
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - Executable search path is: 
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - ModLoad: 00000000`00130000 00000000`00152000   debugger_test-39f01acd7da8dd21.exe
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - 
+[00:02:58] ************* Symbol Path validation summary **************
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,462 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - 
+[00:02:58] ************* Symbol Path validation summary **************
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - 
+[00:02:58] "
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:02:58] 
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:02:58] for more reliable results.Base address and size overrides can be given as
+[00:02:58] .reload <image.ext>=<base>,<size>.
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,494 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-39f01acd7da8dd21.exe
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:10,509 INFO  DebuggerApi - Setting breakpoints ..
+[00:02:58] 2017-06-23 21:37:10,509 DEBUG DebuggerApi - 	main.rs : #104
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`77d30000 00000000`77e9f000   ntdll.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`77c60000 00000000`77cab000   C:\windows\SYSTEM32\wow64.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`77cb0000 00000000`77d18000   C:\windows\system32\wow64win.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`77d20000 00000000`77d29000   C:\windows\system32\wow64cpu.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`003c0000 00000000`004fe000   WOW64_IMAGE_SECTION
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   WOW64_IMAGE_SECTION
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`003c0000 00000000`004fe000   NOT_AN_IMAGE
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`003c0000 00000000`00537000   NOT_AN_IMAGE
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75530000 00000000`75670000   C:\windows\SysWOW64\KERNEL32.DLL
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75850000 00000000`75927000   C:\windows\SysWOW64\KERNELBASE.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75490000 00000000`754a5000   C:\windows\SysWOW64\VCRUNTIME140.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75480000 00000000`75484000   C:\windows\SysWOW64\api-ms-win-crt-string-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75470000 00000000`75474000   C:\windows\SysWOW64\api-ms-win-crt-runtime-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75460000 00000000`75465000   C:\windows\SysWOW64\api-ms-win-crt-math-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75450000 00000000`75454000   C:\windows\SysWOW64\api-ms-win-crt-stdio-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75440000 00000000`75443000   C:\windows\SysWOW64\api-ms-win-crt-locale-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75430000 00000000`75433000   C:\windows\SysWOW64\api-ms-win-crt-heap-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75420000 00000000`75424000   C:\windows\SysWOW64\api-ms-win-crt-convert-l1-1-0.dll
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - ModLoad: 00000000`75330000 00000000`75411000   C:\windows\SysWOW64\ucrtbase.DLL
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:12,518 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:13,033 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\SysWOW64\KERNEL32.DLL - 
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:13,033 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:02:58] 
+[00:02:58] 2017-06-23 21:37:13,065 DEBUG OutputCallbacks - Unable to deliver callback, 31
+[00:02:58] 
+[00:03:01] => windbg_debug_tests.RustDebuggingTests("rust\target\x86_64-pc-windows-msvc\de...").Run_FileWithDynamicStrings_DecodesStringsCorrectly
+[00:03:01] 2017-06-23 21:37:13,127 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - 
+[00:03:01] ************* Symbol Path validation summary **************
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\i686-pc-windows-msvc\debug
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - Executable search path is: 
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - ModLoad: 00007ff7`edca0000 00007ff7`edcca000   debugger_test-67dc7b29489d77eb.exe
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - 
+[00:03:01] ************* Symbol Path validation summary **************
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,634 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - 
+[00:03:01] ************* Symbol Path validation summary **************
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - 
+[00:03:01] "
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:03:01] 
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:03:01] for more reliable results.Base address and size overrides can be given as
+[00:03:01] .reload <image.ext>=<base>,<size>.
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,670 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,707 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-67dc7b29489d77eb.exe
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:13,789 INFO  DebuggerApi - Setting breakpoints ..
+[00:03:01] 2017-06-23 21:37:13,789 DEBUG DebuggerApi - 	main.rs : #109
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc560000 00007ffa`cc577000   C:\windows\SYSTEM32\VCRUNTIME140.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8b0000 00007ffa`cc8b4000   C:\windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8a0000 00007ffa`cc8a4000   C:\windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc520000 00007ffa`cc525000   C:\windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc890000 00007ffa`cc894000   C:\windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc550000 00007ffa`cc553000   C:\windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8d0000 00007ffa`cc8d3000   C:\windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc880000 00007ffa`cc884000   C:\windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc5e0000 00007ffa`cc6d4000   C:\windows\SYSTEM32\ucrtbase.DLL
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:15,811 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:16,326 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\system32\KERNEL32.DLL - 
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:16,326 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:03:01] 
+[00:03:01] 2017-06-23 21:37:16,326 INFO  DebuggerApi - Terminating ..
+[00:03:04] => windbg_debug_tests.RustDebuggingTests("rust\target\x86_64-pc-windows-msvc\de...").Run_WithBreakpoint_StopsAtBreakpoint
+[00:03:04] 2017-06-23 21:37:16,373 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - 
+[00:03:04] ************* Symbol Path validation summary **************
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - Executable search path is: 
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - ModLoad: 00007ff7`edca0000 00007ff7`edcca000   debugger_test-67dc7b29489d77eb.exe
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - 
+[00:03:04] ************* Symbol Path validation summary **************
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,885 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - 
+[00:03:04] ************* Symbol Path validation summary **************
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - 
+[00:03:04] "
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:03:04] 
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:03:04] for more reliable results.Base address and size overrides can be given as
+[00:03:04] .reload <image.ext>=<base>,<size>.
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-67dc7b29489d77eb.exe
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:16,920 INFO  DebuggerApi - Setting breakpoints ..
+[00:03:04] 2017-06-23 21:37:16,920 DEBUG DebuggerApi - 	main.rs : #102
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc560000 00007ffa`cc577000   C:\windows\SYSTEM32\VCRUNTIME140.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8b0000 00007ffa`cc8b4000   C:\windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8a0000 00007ffa`cc8a4000   C:\windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc520000 00007ffa`cc525000   C:\windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc890000 00007ffa`cc894000   C:\windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc550000 00007ffa`cc553000   C:\windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8d0000 00007ffa`cc8d3000   C:\windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc880000 00007ffa`cc884000   C:\windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc5e0000 00007ffa`cc6d4000   C:\windows\SYSTEM32\ucrtbase.DLL
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:18,940 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:19,455 DEBUG OutputCallbacks - ModLoad: 00007ffa`dcd80000 00007ffa`dcd8b000   C:\windows\SYSTEM32\kernel.appcore.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:19,455 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0340000 00007ffa`e03ea000   C:\windows\system32\msvcrt.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:19,455 DEBUG OutputCallbacks - ModLoad: 00007ffa`e07e0000 00007ffa`e0920000   C:\windows\system32\RPCRT4.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:19,455 DEBUG OutputCallbacks - ModLoad: 00007ffa`de160000 00007ffa`de18e000   C:\windows\system32\SspiCli.dll
+[00:03:04] 
+[00:03:04] 2017-06-23 21:37:19,455 DEBUG OutputCallbacks - ModLoad: 00007ffa`e02d0000 00007ffa`e0329000   C:\windows\SYSTEM32\sechost.dll
+[00:03:04] 
+[00:03:08] => windbg_debug_tests.RustDebuggingTests("rust\target\x86_64-pc-windows-msvc\de...").Run_WithBreakpointAtTheEnd_ShowsLocalVariables
+[00:03:08] 2017-06-23 21:37:19,993 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - 
+[00:03:08] ************* Symbol Path validation summary **************
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - Executable search path is: 
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - ModLoad: 00007ff7`edca0000 00007ff7`edcca000   debugger_test-67dc7b29489d77eb.exe
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - 
+[00:03:08] ************* Symbol Path validation summary **************
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,507 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - 
+[00:03:08] ************* Symbol Path validation summary **************
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - 
+[00:03:08] "
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:03:08] 
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:03:08] for more reliable results.Base address and size overrides can be given as
+[00:03:08] .reload <image.ext>=<base>,<size>.
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,543 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-67dc7b29489d77eb.exe
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:20,558 INFO  DebuggerApi - Setting breakpoints ..
+[00:03:08] 2017-06-23 21:37:20,558 DEBUG DebuggerApi - 	main.rs : #102
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc560000 00007ffa`cc577000   C:\windows\SYSTEM32\VCRUNTIME140.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8b0000 00007ffa`cc8b4000   C:\windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8a0000 00007ffa`cc8a4000   C:\windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc520000 00007ffa`cc525000   C:\windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc890000 00007ffa`cc894000   C:\windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc550000 00007ffa`cc553000   C:\windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8d0000 00007ffa`cc8d3000   C:\windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc880000 00007ffa`cc884000   C:\windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc5e0000 00007ffa`cc6d4000   C:\windows\SYSTEM32\ucrtbase.DLL
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:22,567 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:23,083 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\system32\KERNEL32.DLL - 
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:23,083 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:03:08] 
+[00:03:08] 2017-06-23 21:37:23,130 DEBUG OutputCallbacks - Unable to deliver callback, 31
+[00:03:08] 
+[00:03:10] => windbg_debug_tests.RustDebuggingTests("rust\target\x86_64-pc-windows-msvc\de...").Run_WithoutBreakPoints_Closes
+[00:03:10] 2017-06-23 21:37:23,161 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - 
+[00:03:10] ************* Symbol Path validation summary **************
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - Executable search path is: 
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - ModLoad: 00007ff7`edca0000 00007ff7`edcca000   debugger_test-67dc7b29489d77eb.exe
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - 
+[00:03:10] ************* Symbol Path validation summary **************
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,674 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - 
+[00:03:10] ************* Symbol Path validation summary **************
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - 
+[00:03:10] "
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:03:10] 
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:03:10] for more reliable results.Base address and size overrides can be given as
+[00:03:10] .reload <image.ext>=<base>,<size>.
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:23,705 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-67dc7b29489d77eb.exe
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc560000 00007ffa`cc577000   C:\windows\SYSTEM32\VCRUNTIME140.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8b0000 00007ffa`cc8b4000   C:\windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8a0000 00007ffa`cc8a4000   C:\windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc520000 00007ffa`cc525000   C:\windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc890000 00007ffa`cc894000   C:\windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc550000 00007ffa`cc553000   C:\windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8d0000 00007ffa`cc8d3000   C:\windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc880000 00007ffa`cc884000   C:\windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc5e0000 00007ffa`cc6d4000   C:\windows\SYSTEM32\ucrtbase.DLL
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`dcd80000 00007ffa`dcd8b000   C:\windows\SYSTEM32\kernel.appcore.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0340000 00007ffa`e03ea000   C:\windows\system32\msvcrt.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`e07e0000 00007ffa`e0920000   C:\windows\system32\RPCRT4.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`de160000 00007ffa`de18e000   C:\windows\system32\SspiCli.dll
+[00:03:10] 
+[00:03:10] 2017-06-23 21:37:25,724 DEBUG OutputCallbacks - ModLoad: 00007ffa`e02d0000 00007ffa`e0329000   C:\windows\SYSTEM32\sechost.dll
+[00:03:10] 
+[00:03:13] => windbg_debug_tests.RustDebuggingTests("rust\target\x86_64-pc-windows-msvc\de...").StepInto_StdLib_ShouldUseRustSources
+[00:03:13] 2017-06-23 21:37:25,798 INFO  DebuggerApi - Launching application for debugging: C:\projects\windbg-debug\src\windbg-debug-tests\bin\Release\..\..\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - CommandLine: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug\debugger_test.exe 
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - 
+[00:03:13] ************* Symbol Path validation summary **************
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - Symbol search path is: C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - Executable search path is: 
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - ModLoad: 00007ff7`edca0000 00007ff7`edcca000   debugger_test-67dc7b29489d77eb.exe
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - 
+[00:03:13] ************* Symbol Path validation summary **************
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,306 DEBUG OutputCallbacks - OK                                             C:\projects\windbg-debug\src\windbg-debug-tests\test-debuggees\rust\target\x86_64-pc-windows-msvc\debug
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - 
+[00:03:13] ************* Symbol Path validation summary **************
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - Response                         Time (ms)     Location
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - OK                                             C:\Users\appveyor\.rustup\toolchains\stable-i686-pc-windows-msvc\lib\rustlib\src\rust\src
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - 
+[00:03:13] "
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - debugger_test" was not found in the image list.
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - Debugger will attempt to load "debugger_test" at given base 00000000`00000000.
+[00:03:13] 
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - Please provide the full image name, including the extension (i.e. kernel32.dll)
+[00:03:13] for more reliable results.Base address and size overrides can be given as
+[00:03:13] .reload <image.ext>=<base>,<size>.
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - Unable to add module at 00000000`00000000
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,341 DEBUG OutputCallbacks - *** WARNING: Unable to verify checksum for debugger_test-67dc7b29489d77eb.exe
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:26,356 INFO  DebuggerApi - Setting breakpoints ..
+[00:03:13] 2017-06-23 21:37:26,356 DEBUG DebuggerApi - 	main.rs : #104
+[00:03:13] 2017-06-23 21:37:28,361 DEBUG OutputCallbacks - ModLoad: 00007ffa`e0f70000 00007ffa`e111d000   ntdll.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,361 DEBUG OutputCallbacks - ModLoad: 00007ffa`dfdf0000 00007ffa`dff2e000   C:\windows\system32\KERNEL32.DLL
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,361 DEBUG OutputCallbacks - ModLoad: 00007ffa`de1f0000 00007ffa`de305000   C:\windows\system32\KERNELBASE.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc560000 00007ffa`cc577000   C:\windows\SYSTEM32\VCRUNTIME140.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8b0000 00007ffa`cc8b4000   C:\windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8a0000 00007ffa`cc8a4000   C:\windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc520000 00007ffa`cc525000   C:\windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc890000 00007ffa`cc894000   C:\windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc550000 00007ffa`cc553000   C:\windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc8d0000 00007ffa`cc8d3000   C:\windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc880000 00007ffa`cc884000   C:\windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - ModLoad: 00007ffa`cc5e0000 00007ffa`cc6d4000   C:\windows\SYSTEM32\ucrtbase.DLL
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,364 DEBUG OutputCallbacks - Breakpoint 2 hit
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,864 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\windows\system32\KERNEL32.DLL - 
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,864 DEBUG OutputCallbacks - *** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+[00:03:13] 
+[00:03:13] 2017-06-23 21:37:28,880 DEBUG OutputCallbacks - Unable to deliver callback, 31
+[00:03:13] 
+[00:03:13] => windbg_debug_tests.SetUpTests
+[00:03:13] 2017-06-23 21:36:42,323 INFO  Initialize - Log file location: "C:\Users\appveyor\AppData\Roaming\WinDbgDebugger\debug.log"
+[00:03:14] 
+[00:03:14] Run Settings
+[00:03:14]     DisposeRunners: True
+[00:03:14]     WorkDirectory: C:\projects\windbg-debug
+[00:03:14]     ImageRuntimeVersion: 4.0.30319
+[00:03:14]     ImageTargetFrameworkName: .NETFramework,Version=v4.5.2
+[00:03:14]     ImageRequiresX86: False
+[00:03:14]     ImageRequiresDefaultAppDomainAssemblyResolver: False
+[00:03:14]     NumberOfTestWorkers: 2
+[00:03:14] 
+[00:03:14] Test Run Summary
+[00:03:14]   Overall result: Passed
+[00:03:14]   Test Count: 14, Passed: 14, Failed: 0, Warnings: 0, Inconclusive: 0, Skipped: 0
+[00:03:14]   Start time: 2017-06-23 21:36:40Z
+[00:03:14]     End time: 2017-06-23 21:37:29Z
+[00:03:14]     Duration: 48.305 seconds
+[00:03:14] 
+[00:03:14] Results (nunit3) saved as TestResult.xml
+[00:03:14] Build success
